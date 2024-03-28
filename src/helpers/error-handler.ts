@@ -9,7 +9,7 @@ export default (
   error: ApplicationError,
   req: Request,
   res: Response,
-  next: NextFunction
+  next: NextFunction,
 ) => {
   const isProduction = process.env.NODE_ENV === "production";
   let errorMessages: Error | null = null; // Change type to Error | null

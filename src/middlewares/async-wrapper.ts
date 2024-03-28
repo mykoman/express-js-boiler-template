@@ -12,7 +12,7 @@ export default (wrapFunction: RequestHandler) =>
           errors
             .array()
             .map((err) => err.msg)
-            .join(", ")
+            .join(", "),
         );
       }
       await wrapFunction(req, res, next);
